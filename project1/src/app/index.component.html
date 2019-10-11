@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-image: url('./assets/main.jpg'); background-repeat: no-repeat; background-size: 1400px 1300px; height: 650px; margin: 0px;">
+<div class="container" style="width: 100%">
+	
+  	
+<h1 
+ style="color:rgb(245, 243, 243); margin-center: 150px; float:right">WELCOME</h1>
+
+  </div>
+  <div class="container" style="margin-right: 100%; margin-top: 5px; ">
+    <a routerLink="/adminlogin"><button id="btn" class="inputb" style="margin-right: 1020px; margin-left: 500px; margin-top: 200px; float: left;">Admin Login</button></a>		
+		<a routerLink="/userlogin"><button id="btn" class="inputb" style="margin-right: 1020px; margin-left: 500px; margin-top: 40px; float: left;">User Login</button></a> 
+		<a routerLink="/mentorlogin"><button id="btn" class="inputb"  style=" margin-top: 40px; margin-left: 500px; float: left;">Mentor Login</button></a><br>
+		
+ 	</div>
+	
+
+</body>
+
+<style type="text/css">
+
+.inputb
+	{
+		background-color: rgb(202, 226, 62);
+		color:rgb(13, 95, 31);
+		height: 40px;
+		border: 0 solid blue;
+		width: 50px;
+		/*padding-bottom: 10px;*/
+		border-radius: 2px;
+		width: 300px;
+		margin-bottom: 10px;
+	}
+	#btn:hover{
+		
+		background-color: #808080;
+
+	}
+</style>
+<script type="text/javascript">
+	function user()
+	{
+		location.href = "userlogin.html";
+	}
+	function mentor()
+	{
+		location.href = 'mentorlogin.html';
+	}
+	function admin()
+	{
+		location.href = 'adminlogin.html';
+	}
+</script>
+<router-outlet></router-outlet>
+</html>

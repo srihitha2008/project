@@ -1,0 +1,42 @@
+<head>
+  <title>User login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(140, 145, 141); height: 656px;">
+<div class="container">
+  <div style="width: 600px; margin-left: 250px;">
+    <img src="./assets/login.jpg" width="30%" height="30%" style="margin-left: 210px; margin-top: 50px;">
+  <h2 class="text-center">MENTOR  LOGIN</h2>
+ 
+    <div class="form-group">
+      <label for="usr">Email:</label>
+      <input type="text" [(ngModel)]="mentor.email" class="form-control"  (input)="usr = $event.target.value"  id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" [(ngModel)]="mentor.password" (input)="pwd = $event.target.value"  class="form-control" id="pwd">
+    </div>
+    <input type="button" name="" (click)="searchUser()" style="width: 150px; margin-left: 230px;" class="btn btn-primary"  value="Log in"><br>
+
+  <b>New user </b><a class="a" routerLink='/addmentor' >Sign up here</a><br>
+   
+</div>
+</div>
+</body>
+<style>
+  .a{
+      color:rgb(26, 95, 223);
+      font-family: monospace;
+      text-decoration: none;
+      font-style: bold;
+    }
+  .a:hover
+    {
+      color:rgb(120, 16, 151);
+      text-decoration: none;
+    }
+</style>
